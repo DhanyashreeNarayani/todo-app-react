@@ -6,6 +6,7 @@
   .task > * {
     background-color: #ffffff !important;
     font-size: large;
+    color: gray;
   }
   .task {
     height: 60px;
@@ -14,7 +15,31 @@
     padding: 3px 2% 0px 2%;
     border-radius: 60px;
     margin: 20px;
-    // z-index: 100;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  .task-complete {
+    text-decoration: line-through;
+  }
+  .task:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .fas {
+    font-size: 30px;
+  }
+  .fa-check-circle {
+    text-shadow: -3px 6px 14px rgba(0, 0, 0, 0.1);
+  }
+  .task-status-complete {
+    color: #4cdcbc !important;
+  }
+  .task-status-pending {
+    color: #ffffff !important;
+  }
+  .task-status-pending:hover {
+    text-shadow: 0px 0px 5px #4cdcbc;
+    cursor: pointer;
   }
 }
