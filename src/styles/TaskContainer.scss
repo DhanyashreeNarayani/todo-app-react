@@ -1,0 +1,20 @@
+.taskContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .task,
+  .task > * {
+    background-color: #ffffff !important;
+    font-size: large;
+  }
+  .task {
+    height: 60px;
+    width: 60%;
+    border: solid #fdfdfd;
+    padding: 3px 2% 0px 2%;
+    border-radius: 60px;
+    margin: 20px;
+    // z-index: 100;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  }
+}
